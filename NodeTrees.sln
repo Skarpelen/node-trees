@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.Server", "src\NodeTrees.Server\NodeTrees.Server.csproj", "{A0553FCD-9B12-FBEE-56EF-9F16B24A6B74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.DataAccess", "src\NodeTrees.DataAccess\NodeTrees.DataAccess.csproj", "{7A81492E-DB43-C2EF-2E6B-90D5D32DA5BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.BusinessLogic", "src\NodeTrees.BusinessLogic\NodeTrees.BusinessLogic.csproj", "{8911FD3E-B178-48F0-B72E-9CD6C8C4760F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.Shared", "src\NodeTrees.Shared\NodeTrees.Shared.csproj", "{F3E82740-E24A-462C-8E89-AC51FAC9D9E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.WebApi", "src\NodeTrees.WebApi\NodeTrees.WebApi.csproj", "{A355D334-8ACE-C210-C67B-790ABA8BA489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeTrees.Authentication", "src\NodeTrees.Authentication\NodeTrees.Authentication.csproj", "{50673E38-6CDA-4E33-ADE4-C99CECA7F0AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0553FCD-9B12-FBEE-56EF-9F16B24A6B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0553FCD-9B12-FBEE-56EF-9F16B24A6B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0553FCD-9B12-FBEE-56EF-9F16B24A6B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0553FCD-9B12-FBEE-56EF-9F16B24A6B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A81492E-DB43-C2EF-2E6B-90D5D32DA5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A81492E-DB43-C2EF-2E6B-90D5D32DA5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A81492E-DB43-C2EF-2E6B-90D5D32DA5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A81492E-DB43-C2EF-2E6B-90D5D32DA5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8911FD3E-B178-48F0-B72E-9CD6C8C4760F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8911FD3E-B178-48F0-B72E-9CD6C8C4760F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8911FD3E-B178-48F0-B72E-9CD6C8C4760F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8911FD3E-B178-48F0-B72E-9CD6C8C4760F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E82740-E24A-462C-8E89-AC51FAC9D9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E82740-E24A-462C-8E89-AC51FAC9D9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E82740-E24A-462C-8E89-AC51FAC9D9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E82740-E24A-462C-8E89-AC51FAC9D9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A355D334-8ACE-C210-C67B-790ABA8BA489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A355D334-8ACE-C210-C67B-790ABA8BA489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A355D334-8ACE-C210-C67B-790ABA8BA489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A355D334-8ACE-C210-C67B-790ABA8BA489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50673E38-6CDA-4E33-ADE4-C99CECA7F0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50673E38-6CDA-4E33-ADE4-C99CECA7F0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50673E38-6CDA-4E33-ADE4-C99CECA7F0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50673E38-6CDA-4E33-ADE4-C99CECA7F0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFD03A78-6B3E-4DAC-86BD-8FC2BD10D366}
+	EndGlobalSection
+EndGlobal

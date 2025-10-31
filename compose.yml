@@ -1,0 +1,39 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: node_trees_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: NodeTreesDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+  nodetrees:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    ports:
+      - "7146:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+
+      - Databases__Postgres__ConnectionString=Host=postgres;Port=5432;Database=NodeTreesDB;Username=postgres;Password=postgres;Include Error Detail=true
+
+      - UsedDatabase=Postgres
+      - AllowedHosts=*
+
+      - JwtAuthorization__Issuer=NodeTrees
+      - JwtAuthorization__Audience=NodeTrees
+      - JwtAuthorization__SigningKey=f4Kri26XP8KoLPFFEoM7MFiim1w9O829cS4ebURhsAsSyr0hSQmmwQqRWkMDJ42I
+      - JwtAuthorization__ExpirationSeconds=2592000
+
+volumes:
+  postgres_data:
