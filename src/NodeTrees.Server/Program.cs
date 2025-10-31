@@ -1,4 +1,4 @@
-using Asp.Versioning;
+п»їusing Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
@@ -20,7 +20,6 @@ namespace NodeTrees.Server
 
         public static async Task Main(string[] args)
         {
-
             try
             {
                 await RunApp(args);
@@ -41,7 +40,7 @@ namespace NodeTrees.Server
             var builder = WebApplication.CreateBuilder(args);
             builder.Configuration.AddEnvironmentVariables();
 
-            // необходимо, чтобы легаси фильтр увидел IConfiguration
+            // РЅРµРѕР±С…РѕРґРёРјРѕ, С‡С‚РѕР±С‹ Р»РµРіР°СЃРё С„РёР»СЊС‚СЂ СѓРІРёРґРµР» IConfiguration
             AppDomain.CurrentDomain.SetData("HostBuilderContextConfiguration",
                 builder.Configuration);
 
